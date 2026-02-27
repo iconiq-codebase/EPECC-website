@@ -109,11 +109,11 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center space-x-3 text-gray-400">
                                 <FaPhoneAlt className="w-4 h-4 text-[#B20055] shrink-0" />
-                                <a href="tel:+9779800000000" className="hover:text-white transition">+977 9800000000</a>
+                                <a href={`tel:${process.env.NEXT_PUBLIC_NUMBER}`} className="hover:text-white transition">{process.env.NEXT_PUBLIC_NUMBER}</a>
                             </li>
                             <li className="flex items-center space-x-3 text-gray-400">
                                 <FaEnvelope className="w-4 h-4 text-[#B20055] shrink-0" />
-                                <a href="mailto:info@epecc.com" className="hover:text-white transition">info@epecc.com</a>
+                                <a href={`mailto:${process.env.NEXT_PUBLIC_SUPPORT_MAIL}`} className="hover:text-white transition">{process.env.NEXT_PUBLIC_SUPPORT_MAIL}</a>
                             </li>
                         </ul>
                     </div>
