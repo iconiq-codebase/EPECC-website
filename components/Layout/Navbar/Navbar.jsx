@@ -8,13 +8,13 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
   { name: "Home", href: "/" },
-  { name: "About Us", href: "/about" },
-  { name: "Destinations", href: "/destinations" },
-  { name: "Services", href: "/services" },
-  { name: "Study Abroad", href: "/study-abroad" },
-  { name: "Stories", href: "/stories" },
-  { name: "Blogs", href: "/blogs" },
-  { name: "Contact Us", href: "/contact" },
+  { name: "About Us", href: "/about/" },
+  { name: "Destinations", href: "/destinations/" },
+  { name: "Services", href: "/services/" },
+  { name: "Study Abroad", href: "/study-abroad/" },
+  { name: "Stories", href: "/stories/" },
+  { name: "Blogs", href: "/blogs/" },
+  { name: "Contact Us", href: "/contact/" },
 ];
 
 export default function Navbar() {
