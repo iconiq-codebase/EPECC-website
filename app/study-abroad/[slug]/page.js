@@ -4,7 +4,7 @@ import ProgramPage from "@/components/Layout/Pages/ProgramPage/ProgramPage";
 
 export async function generateStaticParams() {
     // Fetch all programs for static export
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/programs/get-all`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL_PROD}/api/programs/get-all`);
     const data = await res.json();
 
     // Ensure it's an array

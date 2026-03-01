@@ -1,7 +1,7 @@
 import CountriesPage from "@/components/Layout/Pages/CountriesPage/CountriesPage";
 
 export async function generateStaticParams() {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/countries/get-all`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL_PROD}/api/countries/get-all`, {
         method: 'GET',
     });
     const data = await res.json();
