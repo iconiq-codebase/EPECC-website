@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create axios instance
 const api = axios.create({
-    baseURL: `${process.env.NEXT_PUBLIC_API_URL_DEV}/api`,
+    baseURL: `${process.env.NEXT_PUBLIC_API_URL_PROD}/api`,
     withCredentials: true, // IMPORTANT for cookies
 });
 
