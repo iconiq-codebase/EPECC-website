@@ -82,7 +82,7 @@ export default function CompanyStory() {
 
                     <div className="relative bg-[#020617] text-white rounded-[2rem] p-8 md:p-12 shadow-2xl overflow-hidden group">
                         {/* Grain Overlay */}
-                        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-overlay" />
+                        <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-10 mix-blend-overlay" />
 
                         <h3 className="text-3xl font-bold mb-8 relative z-10">
                             The EPECC <span className="text-[#2ECED5]">Edge</span>

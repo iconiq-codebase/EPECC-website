@@ -40,7 +40,7 @@ export default function CountriesHero({ country }) {
     return (
         <section
             ref={containerRef}
-            className="relative h-[90vh] min-h-[700px] w-full overflow-hidden bg-[#050505] text-white"
+            className="photo-hero relative h-[90vh] min-h-[700px] w-full overflow-hidden bg-[#050505] text-white"
         >
             {/* Parallax Background Layer */}
             <motion.div

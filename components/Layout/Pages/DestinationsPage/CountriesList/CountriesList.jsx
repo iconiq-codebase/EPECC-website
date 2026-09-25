@@ -139,7 +139,7 @@ function CountryCard({ country, index }) {
             exit={{ opacity: 0, scale: 0.95 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.05 }}
-            className="group relative h-[620px] w-full overflow-hidden rounded-[2.5rem] bg-slate-900 border border-slate-800 hover:border-cyan-500/40 transition-all duration-700 shadow-2xl"
+            className="photo-card group relative h-[620px] w-full overflow-hidden rounded-[2.5rem] bg-slate-900 border border-slate-800 hover:border-cyan-500/40 transition-all duration-700 shadow-2xl"
         >
             {/* Background Image Layer */}
             <div className="absolute inset-0 z-0">

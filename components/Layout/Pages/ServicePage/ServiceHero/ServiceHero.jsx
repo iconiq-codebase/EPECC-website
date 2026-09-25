@@ -22,7 +22,7 @@ export default function ServiceHeroEducation() {
       {/* --- Premium Background Elements --- */}
       {/* Subtle Grid Pattern */}
       <div className="absolute inset-0 z-0 opacity-10 [mask-image:radial-gradient(ellipse_at_center,black,transparent)]" 
-           style={{ backgroundImage: "url('https://grainy-gradients.vercel.app/noise.svg'), linear-gradient(to right, #2ECED5 1px, transparent 1px), linear-gradient(to bottom, #2ECED5 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
+           style={{ backgroundImage: "url('/noise.svg'), linear-gradient(to right, #2ECED5 1px, transparent 1px), linear-gradient(to bottom, #2ECED5 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
       
       {/* Dynamic Glows */}
       <div className="absolute -top-[10%] -left-[10%] w-[500px] h-[500px] bg-[#2ECED5]/20 blur-[120px] rounded-full" />

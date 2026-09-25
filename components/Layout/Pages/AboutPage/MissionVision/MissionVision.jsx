@@ -8,7 +8,7 @@ export default function MissionVision() {
         <section className="relative bg-[#020617] text-white py-32 px-6 lg:px-20 overflow-hidden">
 
             {/* --- BACKGROUND ELEMENTS (Consistent with Hero) --- */}
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 contrast-150 -z-10 mix-blend-overlay"></div>
+            <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-20 brightness-100 contrast-150 -z-10 mix-blend-overlay"></div>
 
             {/* Subtle Grid Lines */}
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] -z-10" />

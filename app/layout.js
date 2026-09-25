@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_DOMAIN || "https://epecc.edu.np"),
   title: "EPECC",
   description: "Explore top global education destinations with EPECC. Discover world-class universities, popular courses, visa guidance, and student lifestyle insights to plan your international study journey with confidence.",
   icons: {

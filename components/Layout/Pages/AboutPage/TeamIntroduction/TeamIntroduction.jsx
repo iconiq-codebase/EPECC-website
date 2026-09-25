@@ -36,7 +36,7 @@ export default function TeamIntroduction() {
     return (
         <section className="relative bg-[#020617] py-32 px-6 lg:px-20 overflow-hidden">
             {/* --- Background Texture (Consistent with Hero) --- */}
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] pointer-events-none" />
+            <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-[0.03] pointer-events-none" />
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-600/5 blur-[120px] rounded-full -z-10" />
 
             <div className="max-w-7xl mx-auto">

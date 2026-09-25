@@ -15,7 +15,7 @@ export default function AchievementsStats() {
     return (
         <section className="relative bg-[#020617] py-32 px-6 lg:px-20 text-white overflow-hidden">
             {/* Background Texture & Lighting */}
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] pointer-events-none" />
+            <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-[0.03] pointer-events-none" />
             <div className="absolute top-1/2 left-1/2 w-[800px] h-[400px] bg-[#2ECED5]/5 blur-[120px] -translate-x-1/2 -translate-y-1/2 -z-10 rounded-full" />
 
             <div className="max-w-7xl mx-auto">

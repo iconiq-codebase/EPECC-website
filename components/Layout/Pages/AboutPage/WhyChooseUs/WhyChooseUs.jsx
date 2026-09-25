@@ -46,7 +46,7 @@ export default function WhyChooseUs() {
     return (
         <section className="relative bg-[#020617] py-32 px-6 lg:px-20 text-white overflow-hidden">
             {/* Background Texture & Lighting (Consistent with previous sections) */}
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] pointer-events-none" />
+            <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-[0.03] pointer-events-none" />
             <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#2ECED5]/5 blur-[120px] rounded-full -z-10" />
 
             <div className="max-w-7xl mx-auto">

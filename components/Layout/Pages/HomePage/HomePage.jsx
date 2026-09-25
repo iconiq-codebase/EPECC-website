@@ -7,14 +7,14 @@ import TestimonialsSlider from "./TestimonialsSlider/TestimonialsSlider"
 
 const HomePage = () => {
   return (
-    <>
+    <div className="home-page">
       <HeroSection />
       <Destinations />
       <PopularPrograms />
       <QuickOverviewServices />
       <TestimonialsSlider />
       <QuickCTA />
-    </>
+    </div>
   )
 }
 

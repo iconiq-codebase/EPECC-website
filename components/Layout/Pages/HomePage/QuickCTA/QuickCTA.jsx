@@ -6,7 +6,7 @@ import { FaArrowRight, FaHandSparkles } from "react-icons/fa";
 
 export default function QuickCTA() {
     return (
-        <section className="relative py-20 px-6 overflow-hidden">
+        <section className="home-cta relative py-20 px-6 overflow-hidden">
             {/* Dynamic Background Elements */}
             <div className="absolute inset-0 bg-[#020617] -z-20" />
             <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[60%] bg-[#2ECED5]/20 blur-[120px] rounded-full -z-10 animate-pulse" />

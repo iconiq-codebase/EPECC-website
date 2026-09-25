@@ -22,7 +22,7 @@ const BlogDetailsPage = ({ slug }) => {
         <div className="bg-[#001334] text-white min-h-screen">
 
             {/* ================= HERO ================= */}
-            <section className="relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
+            <section className="photo-hero relative w-full h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
                 <Image
                     src={blog.image.url}
                     alt={blog.title}

@@ -21,7 +21,7 @@ const ProgramHero = ({ programName, university, location, duration, imageUrl }) 
     return (
         <section
             ref={containerRef}
-            className="relative w-full h-screen bg-[#020617] overflow-hidden flex items-center"
+            className="photo-hero relative w-full h-screen bg-[#020617] overflow-hidden flex items-center"
         >
             {/* 1. Parallax Background Layer */}
             <motion.div

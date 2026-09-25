@@ -25,7 +25,11 @@ export default function ContactHero() {
             <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-[#B20055]/10 blur-[140px] rounded-full mix-blend-screen" />
 
             {/* Subtle Grid Overlay */}
-            <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] opacity-20 pointer-events-none" />
+            <div className="absolute inset-0 opacity-20 pointer-events-none" style={{
+                backgroundImage: 'linear-gradient(rgba(255,255,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.08) 1px, transparent 1px)',
+                backgroundSize: '28px 28px',
+                maskImage: 'linear-gradient(180deg, white, rgba(255,255,255,0))'
+            }} />
 
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
 
@@ -42,6 +46,7 @@ export default function ContactHero() {
                                 <div key={i} className="w-6 h-6 rounded-full border-2 border-[#000814] bg-gray-800 overflow-hidden">
                                     <Image
                                         src={`/images/contactpage/hero-section/student-${i}.jpg`}
+                                        alt={`EPECC student ${i}`}
                                         width={20}
                                         height={20}
                                         className="object-cover"

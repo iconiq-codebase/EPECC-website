@@ -47,7 +47,7 @@ export default function DestinationsHero() {
     return (
         <section
             ref={ref}
-            className="relative w-full h-[90vh] lg:h-screen flex items-center justify-center bg-[#000d21] overflow-hidden"
+            className="photo-hero relative w-full h-[90vh] lg:h-screen flex items-center justify-center bg-[#000d21] overflow-hidden"
         >
             {/* --- BACKGROUND LAYERS --- */}
 
@@ -69,7 +69,7 @@ export default function DestinationsHero() {
             <div className="absolute inset-0 bg-[#000d21]/30 mix-blend-multiply z-10" />
 
             {/* 3. Noise Texture (The "Premium" Secret Sauce) */}
-            <div className="absolute inset-0 opacity-[0.03] z-10 pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')] brightness-100 contrast-150" />
+            <div className="absolute inset-0 opacity-[0.03] z-10 pointer-events-none bg-[url('/noise.svg')] brightness-100 contrast-150" />
 
             {/* 4. Ambient Glows */}
             <div className="absolute top-[-20%] right-[-10%] w-[60vw] h-[60vw] bg-[#2ECED5]/20 rounded-full blur-[150px] z-10 animate-pulse-slow" />

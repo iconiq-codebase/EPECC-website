@@ -66,7 +66,7 @@ export default function TestimonialsSlider() {
     return (
         <section
             id="testimonials"
-            className="relative bg-[#020617] text-white py-24 px-6 lg:px-20 overflow-hidden"
+            className="home-testimonials relative bg-[#020617] text-white py-24 px-6 lg:px-20 overflow-hidden"
         >
             {/* Background Decor */}
             <div className="absolute top-1/4 left-0 w-[600px] h-[600px] bg-[#2ECED5] opacity-[0.03] blur-[120px] rounded-full pointer-events-none" />
@@ -169,12 +169,14 @@ export default function TestimonialsSlider() {
                         {/* Arrows */}
                         <div className="flex gap-3">
                             <button
+                                aria-label="Previous testimonial"
                                 onClick={prev}
                                 className="w-12 h-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white hover:bg-[#2ECED5] hover:border-[#2ECED5] hover:text-[#001334] transition-all duration-300"
                             >
                                 <FaChevronLeft size={14} />
                             </button>
                             <button
+                                aria-label="Next testimonial"
                                 onClick={next}
                                 className="w-12 h-12 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white hover:bg-[#2ECED5] hover:border-[#2ECED5] hover:text-[#001334] transition-all duration-300"
                             >

@@ -14,7 +14,7 @@ export default function AboutHero() {
             <div className="absolute inset-0 bg-gradient-to-b from-[#001334] via-[#020817] to-[#020617] -z-20" />
 
             {/* 2. Modern Grid Pattern with Fade mask */}
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 brightness-100 contrast-150 -z-10 mix-blend-overlay"></div>
+            <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-20 brightness-100 contrast-150 -z-10 mix-blend-overlay"></div>
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] -z-10" />
 
             {/* 3. Premium Glow/Spotlight Effects */}

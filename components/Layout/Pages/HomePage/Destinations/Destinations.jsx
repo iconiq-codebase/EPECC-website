@@ -26,7 +26,7 @@ export default function Destinations() {
     return (
         <section
             aria-label="Top Study Abroad Destinations"
-            className="relative bg-[#020617] text-white py-24 px-6 lg:px-20 overflow-hidden"
+            className="home-destinations relative bg-[#020617] text-white py-24 px-6 lg:px-20 overflow-hidden"
         >
             {/* Decorative Background Blur */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[#2ECED5] opacity-5 blur-[120px] rounded-full pointer-events-none" />
@@ -93,7 +93,7 @@ export default function Destinations() {
                             <div className="absolute inset-0 bg-gradient-to-t from-[#001334] via-[#001334]/40 to-transparent opacity-90 transition-opacity duration-300 group-hover:opacity-100" />
 
                             {/* Content Layout */}
-                            <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                            <div className="photo-caption absolute inset-0 p-6 flex flex-col justify-end">
                                 {/* Top Badge (Hidden initially, shown on hover/focus) */}
                                 <div className="absolute top-6 right-6 opacity-0 translate-y-[-10px] group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
                                     <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">

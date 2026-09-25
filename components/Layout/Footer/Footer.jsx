@@ -7,39 +7,22 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     const quickLinks = [
-        {
-            label: 'Home',
-            href: '/'
-        },
-        {
-            label: 'About Us',
-            href: '/about'
-        },
-        {
-            label: 'Destinations',
-            href: '/destinations'
-        },
-        {
-            label: 'Services',
-            href: '/services'
-        },
-        {
-            label: 'Study Abroad',
-            href: '/study-abroad'
-        },
-        {
-            label: 'Stories',
-            href: '/stories'
-        },
-        {
-            label: 'Blogs',
-            href: '/blogs'
-        },
-        {
-            label: 'Contact Us',
-            href: '/contact'
-        }
-    ]
+        { label: 'Home', href: '/' },
+        { label: 'About Us', href: '/about' },
+        { label: 'Destinations', href: '/destinations' },
+        { label: 'Services', href: '/services' },
+        { label: 'Study Abroad', href: '/study-abroad' },
+        { label: 'Stories', href: '/stories' },
+        { label: 'Blogs', href: '/blogs' },
+        { label: 'Contact Us', href: '/contact' }
+    ];
+
+    const socialLinks = [
+        { icon: FaFacebookF, href: process.env.NEXT_PUBLIC_FACEBOOK || '#', label: 'Facebook' },
+        { icon: FaInstagram, href: process.env.NEXT_PUBLIC_INSTAGRAM || '#', label: 'Instagram' },
+        { icon: FaLinkedinIn, href: 'https://www.linkedin.com', label: 'LinkedIn' },
+        { icon: FaTwitter, href: 'https://x.com', label: 'Twitter' },
+    ];
 
     return (
         <footer className="relative bg-[#001334] text-gray-300 pt-20 pb-10 overflow-hidden font-sans">
@@ -58,21 +41,16 @@ export default function Footer() {
                             </h2>
                         </Link>
                         <p className="text-gray-400 leading-relaxed max-w-sm">
-                            Expert study abroad consultancy helping students achieve global education goals.
-                            We provide premium guidance on universities, visas, and strategic career planning.
+                            Expert study abroad consultancy helping students achieve global education goals with university selection, visa guidance, and career-focused planning.
                         </p>
 
-                        {/* Social Icons */}
                         <div className="flex space-x-3 pt-2">
-                            {[
-                                { icon: FaFacebookF, href: "#", label: "Facebook" },
-                                { icon: FaInstagram, href: "#", label: "Instagram" },
-                                { icon: FaLinkedinIn, href: "#", label: "LinkedIn" },
-                                { icon: FaTwitter, href: "#", label: "Twitter" },
-                            ].map((social, idx) => (
+                            {socialLinks.map((social, idx) => (
                                 <a
                                     key={idx}
                                     href={social.href}
+                                    target={social.href.startsWith('http') ? '_blank' : undefined}
+                                    rel={social.href.startsWith('http') ? 'noreferrer' : undefined}
                                     aria-label={social.label}
                                     className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#B20055] hover:border-[#B20055] hover:text-white transition-all duration-300 group"
                                 >
@@ -105,7 +83,7 @@ export default function Footer() {
                         <ul className="space-y-4">
                             <li className="flex items-start space-x-3 text-gray-400">
                                 <FaMapMarkerAlt className="w-5 h-5 text-[#B20055] mt-1 shrink-0" />
-                                <span>123 Main Street,<br />Kathmandu, Nepal</span>
+                                <span>{process.env.NEXT_PUBLIC_ADDRESS || 'Kathmandu, Nepal'}</span>
                             </li>
                             <li className="flex items-center space-x-3 text-gray-400">
                                 <FaPhoneAlt className="w-4 h-4 text-[#B20055] shrink-0" />

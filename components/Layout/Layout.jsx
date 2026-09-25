@@ -12,13 +12,13 @@ const Layout = ({ children }) => {
   const hiddenPaths = pathname.startsWith('/admin')
 
   return (
-    <div>
+    <div className={hiddenPaths ? undefined : "public-site"}>
       <MyProvider>
         {
           !hiddenPaths && < Navbar />
         }
 
-        {children}
+        {hiddenPaths ? children : <div className="site-content">{children}</div>}
 
         {
           !hiddenPaths &&
